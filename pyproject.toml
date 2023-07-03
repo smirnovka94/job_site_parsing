@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "job-site-parsing"
+version = "0.1.0"
+description = ""
+authors = ["kirill <lekseich8@gmail.com>"]
+readme = "README.md"
+packages = [{include = "job_site_parsing"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
