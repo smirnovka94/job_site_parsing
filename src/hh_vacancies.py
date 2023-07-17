@@ -1,7 +1,7 @@
 import requests
 import json
 
-from src.classnames import API, HH_city
+from src.classnames import HH_city
 from src.function import printj
 
 
@@ -25,7 +25,7 @@ class HeadHunterAPI():
         params = {
             'text': self.name,
             'area': self.id_towns, # Код региона
-            'per_page': 3,  # Количество вакансий для отображения (максимум 100)
+            'per_page': 100,  # Количество вакансий для отображения (максимум 100)
         }
         response = requests.get('https://api.hh.ru/vacancies', params=params)
 
