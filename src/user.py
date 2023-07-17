@@ -31,14 +31,14 @@ def user_filter_sort_parameters(data):
     filter_sort_data = data.filter_salary(filter_costs)
 
     while True:
-        without_salary = input("Показать вакансии в без указаной заработной платы? Да/Нет\n")
+        without_salary = input("Показать вакансии без указаной заработной платы? Да/Нет\n")
         without_salary = without_salary.title()
         if without_salary == "Нет":
             break
         else:
             strip_salary = data.filter_without_salary()
             for k, v in strip_salary.items():
-                filter_sort_data[int(k)] = int(v)
+                filter_sort_data[str(k)] = int(v)
             break
 
     while True:
