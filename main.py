@@ -9,7 +9,6 @@ from src.user import user_input, user_output, user_filter_sort_parameters
 if __name__ == '__main__':
 
     #Ввод исходных данных
-
     search_query, filter_towns = user_input()
     while True:
         repit_result_seach = input("Изменить поиск с новыми условиями поиска? Да/Нет\n")
@@ -20,10 +19,6 @@ if __name__ == '__main__':
             break
         else:
             print("Введите корректный ответ")
-
-
-    # search_query = "Python Developer"
-    # filter_towns = ["Москва", "Санкт-Петербург", "Сочи"]
 
 
     # Запускаем поиск в HH.ru
